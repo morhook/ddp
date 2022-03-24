@@ -65,16 +65,33 @@ SCENE {
       SCALE=24
       ALPHA_COLOR { 255,255,255 }
       ALPHA = 255
-      EDITOR_SELECTED=TRUE
+      EDITOR_SELECTED=FALSE
       POINT {392,344}
       POINT {620,362}
-      POINT {624,480}
+      POINT {621,436}
+      POINT {584,448}
+      POINT {553,476}
       POINT {362,466}
       POINT {182,470}
       POINT {241,436}
       POINT {300,434}
       POINT {354,388}
       POINT {322,375}
+    }
+
+    ENTITY {
+      NAME="calaveras"
+      CAPTION=""
+      ACTIVE=TRUE
+      X=522
+      Y=416
+      SCALABLE=FALSE
+      INTERACTIVE=FALSE
+      COLORABLE=FALSE
+      EDITOR_SELECTED=TRUE
+      WALK_TO_X=0
+      WALK_TO_Y=0
+      SPRITE="sprites\calaveras.png"
     }
 
   }
