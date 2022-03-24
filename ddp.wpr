@@ -27,7 +27,7 @@ CustomPaths=data
 [Packager]
 OutputFolder=packages
 CopyExe=1
-ExeName=game.exe
+ExeName=ddp.exe
 ChangeIcon=0
 IconName=
 BindPackage=
