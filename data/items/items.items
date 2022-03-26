@@ -1,10 +1,10 @@
 ITEM
 {
    CURSOR_COMBINED = TRUE
-   CAPTION = "WME User's Guide"
-   NAME = "book"
-   IMAGE = "items\book.bmp"
-   CURSOR = "items\book.bmp"
-   CURSOR_HOVER = "items\book_h.bmp"
-   SCRIPT = "items\book.script"
+   CAPTION = "Memorias del Chancho en Inglés"
+   NAME = "libro"
+   IMAGE = "items\libro.bmp"
+   CURSOR = "items\libro.bmp"
+   CURSOR_HOVER = "items\libro_h.bmp"
+   SCRIPT = "items\libro.script"
 }

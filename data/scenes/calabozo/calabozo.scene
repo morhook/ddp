@@ -108,7 +108,7 @@ SCENE {
       WALK_TO_X=0
       WALK_TO_Y=0
       SCRIPT="scenes\calabozo\scr\libro.script"
-      SPRITE="items\book.bmp"
+      SPRITE="items\libro.bmp"
       PROPERTY {
         NAME="Type"
         VALUE="item"

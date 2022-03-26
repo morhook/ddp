@@ -1,5 +1,13 @@
 #include "scripts\base.inc"
 
+var Libro = Scene.GetNode("libro");
+global EstadoLibro;
+
+if(EstadoLibro==null)
+{
+  EstadoLibro.yaIntentado = false;
+}
+
 
 ////////////////////////////////////////////////////////////////////////////////
 on "LookAt"
@@ -13,7 +21,15 @@ on "LookAt"
 on "Take"
 {
   actor.GoToObject(this);
-  actor.Talk("No voy a agarrar esto. Podría caerse mi mano");
+  
+  if (EstadoLibro.yaIntentado == false) {
+	EstadoLibro.yaIntentado = true;
+  	actor.Talk("No voy a agarrar esto. Podría caerse mi mano.");
+	actor.Talk("SON LAS MEMORIAS DEL CHANCHO EN INGLES");
+  } else {
+    Game.TakeItem("libro");
+    Libro.Active = false;
+  }
 }
 
 
