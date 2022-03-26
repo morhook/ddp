@@ -103,7 +103,7 @@ SCENE {
       SCALABLE=FALSE
       INTERACTIVE=TRUE
       COLORABLE=FALSE
-      EDITOR_SELECTED=TRUE
+      EDITOR_SELECTED=FALSE
       ITEM="libro"
       WALK_TO_X=0
       WALK_TO_Y=0
@@ -112,6 +112,32 @@ SCENE {
       PROPERTY {
         NAME="Type"
         VALUE="item"
+      }
+
+    }
+
+    ENTITY {
+      NAME="pasadizo"
+      CAPTION=""
+      ACTIVE=TRUE
+      X=645
+      Y=368
+      SCALABLE=TRUE
+      INTERACTIVE=TRUE
+      COLORABLE=TRUE
+      EDITOR_SELECTED=TRUE
+      WALK_TO_X=0
+      WALK_TO_Y=0
+      SCRIPT="scenes\calabozo\scr\pasadizo.script"
+      REGION {
+        NAME="<unnamed>"
+        CAPTION=""
+        ACTIVE=TRUE
+        EDITOR_SELECTED_POINT=-1
+        POINT {591,220}
+        POINT {704,210}
+        POINT {686,368}
+        POINT {587,358}
       }
 
     }
