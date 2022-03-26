@@ -9,7 +9,7 @@ on "Take"
   if(MenuObject!=null)
   {
     if(MenuObject.CanHandleEvent("Take")) MenuObject.ApplyEvent("Take");
-    else actor.Talk("I can't take this.");
+    else actor.Talk("No puedo agarrar esto. Te fumaste algo?");
   }
   MenuObject = null;
 }
@@ -22,7 +22,7 @@ on "LookAt"
   if(MenuObject!=null)
   {
     if(MenuObject.CanHandleEvent("LookAt")) MenuObject.ApplyEvent("LookAt");
-    else actor.Talk("I don't know what to say about it.");
+    else actor.Talk("No tengo nada que decir al respecto de esto.");
   }
   MenuObject = null;
 }
@@ -35,7 +35,7 @@ on "Talk"
   if(MenuObject!=null)
   {
     if(MenuObject.CanHandleEvent("Talk")) MenuObject.ApplyEvent("Talk");
-    else actor.Talk("Can't talk to this.");
+    else actor.Talk("No puedo hablar con esto!");
   }
   MenuObject = null;
 }
