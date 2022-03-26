@@ -38,7 +38,7 @@ while(true){
       WinCaption.Y = 580;
       WinCaption.Width = Game.ScreenWidth;
       WinCaption.TextAlign = TAL_CENTER;
-      WinCaption.Text = "Use " + Item.Caption + " with " + ActObj.Caption;
+      WinCaption.Text = "Usar " + Item.Caption + " con " + ActObj.Caption;
     }
     WinCaption.Visible = true;
     WinCaption.Focus();

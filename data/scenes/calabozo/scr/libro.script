@@ -29,6 +29,7 @@ on "Take"
   } else {
     Game.TakeItem("libro");
     Libro.Active = false;
+  	actor.Talk("Ya fue. No tengo opción");
   }
 }
 
