@@ -46,8 +46,8 @@ while(true){
   else WinCaption.Visible = false;
 
   // display the inventory window
-  if(Game.Interactive && Game.MouseY < 45 && !Game.ResponsesVisible && !WinMenu.Visible) Game.InventoryVisible = true;
-  else if(Game.MouseY > 100 || Game.ResponsesVisible || !Game.Interactive) Game.InventoryVisible = false;
+  if(Game.Interactive && !Game.ResponsesVisible && !WinMenu.Visible) Game.InventoryVisible = true;
+  else if(Game.ResponsesVisible || !Game.Interactive) Game.InventoryVisible = false;
 
   // go to sleep for 20 miliseconds to allow the engine to perform other tasks
   // it is important for the "endless" scripts to call the Sleep command, otherwise the game will get stuck
