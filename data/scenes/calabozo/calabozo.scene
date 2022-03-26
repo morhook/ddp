@@ -88,10 +88,32 @@ SCENE {
       SCALABLE=FALSE
       INTERACTIVE=FALSE
       COLORABLE=FALSE
-      EDITOR_SELECTED=TRUE
+      EDITOR_SELECTED=FALSE
       WALK_TO_X=0
       WALK_TO_Y=0
       SPRITE="sprites\calaveras.png"
+    }
+
+    ENTITY {
+      NAME="libro"
+      CAPTION=""
+      ACTIVE=TRUE
+      X=488
+      Y=370
+      SCALABLE=FALSE
+      INTERACTIVE=TRUE
+      COLORABLE=FALSE
+      EDITOR_SELECTED=TRUE
+      ITEM="libro"
+      WALK_TO_X=0
+      WALK_TO_Y=0
+      SCRIPT="scenes\calabozo\scr\libro.script"
+      SPRITE="items\book.bmp"
+      PROPERTY {
+        NAME="Type"
+        VALUE="item"
+      }
+
     }
 
   }
