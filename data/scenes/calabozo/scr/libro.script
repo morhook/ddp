@@ -1,6 +1,6 @@
 #include "scripts\base.inc"
 
-var Libro = Scene.GetNode("libro");
+var LibroBlock = Scene.GetNode("libroblock");
 global EstadoLibro;
 
 if(EstadoLibro==null)
@@ -28,7 +28,7 @@ on "Take"
 	actor.Talk("SON LAS MEMORIAS DEL CHANCHO EN INGLES");
   } else {
     Game.TakeItem("libro");
-    Libro.Active = false;
+    LibroBlock.Active = false;
   	actor.Talk("Ya fue. No tengo opción");
   }
 }

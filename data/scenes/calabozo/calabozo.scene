@@ -31,6 +31,18 @@ SCENE {
   EDITOR_SHOW_SCALE=TRUE
   
   ; ----- waypoints
+  WAYPOINTS {
+    NAME="new waypoints"
+    EDITOR_SELECTED=FALSE
+    EDITOR_SELECTED_POINT=-1
+    POINT {480,397}
+    POINT {522,373}
+    POINT {556,391}
+    POINT {558,413}
+    POINT {518,427}
+    POINT {488,421}
+    POINT {492,391}
+  }
   
   ; ----- layers
   LAYER {
@@ -54,6 +66,28 @@ SCENE {
       WALK_TO_X=0
       WALK_TO_Y=0
       SPRITE="scenes\calabozo\background.bmp"
+    }
+
+    ENTITY {
+      NAME="libro"
+      CAPTION=""
+      ACTIVE=TRUE
+      X=488
+      Y=370
+      SCALABLE=FALSE
+      INTERACTIVE=TRUE
+      COLORABLE=FALSE
+      EDITOR_SELECTED=FALSE
+      ITEM="libro"
+      WALK_TO_X=0
+      WALK_TO_Y=0
+      SCRIPT="scenes\calabozo\scr\libro.script"
+      SPRITE="items\libro.bmp"
+      PROPERTY {
+        NAME="Type"
+        VALUE="item"
+      }
+
     }
 
     REGION {
@@ -95,28 +129,6 @@ SCENE {
     }
 
     ENTITY {
-      NAME="libro"
-      CAPTION=""
-      ACTIVE=TRUE
-      X=488
-      Y=370
-      SCALABLE=FALSE
-      INTERACTIVE=TRUE
-      COLORABLE=FALSE
-      EDITOR_SELECTED=FALSE
-      ITEM="libro"
-      WALK_TO_X=0
-      WALK_TO_Y=0
-      SCRIPT="scenes\calabozo\scr\libro.script"
-      SPRITE="items\libro.bmp"
-      PROPERTY {
-        NAME="Type"
-        VALUE="item"
-      }
-
-    }
-
-    ENTITY {
       NAME="pasadizo"
       CAPTION=""
       ACTIVE=TRUE
@@ -125,10 +137,11 @@ SCENE {
       SCALABLE=TRUE
       INTERACTIVE=TRUE
       COLORABLE=TRUE
-      EDITOR_SELECTED=TRUE
+      EDITOR_SELECTED=FALSE
       WALK_TO_X=0
       WALK_TO_Y=0
       SCRIPT="scenes\calabozo\scr\pasadizo.script"
+      CURSOR="sprites\system\arrow_right.bmp"
       REGION {
         NAME="<unnamed>"
         CAPTION=""
@@ -140,6 +153,24 @@ SCENE {
         POINT {587,358}
       }
 
+    }
+
+    REGION {
+      NAME="libroblock"
+      CAPTION=""
+      BLOCKED=TRUE
+      DECORATION=FALSE
+      ACTIVE=TRUE
+      SCALE=0
+      ALPHA_COLOR { 255,255,255 }
+      ALPHA = 255
+      EDITOR_SELECTED=TRUE
+      POINT {524,380}
+      POINT {552,393}
+      POINT {552,409}
+      POINT {518,422}
+      POINT {492,416}
+      POINT {488,398}
     }
 
   }
