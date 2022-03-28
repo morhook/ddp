@@ -2,9 +2,6 @@
 
 // here comes the stuff which initializes the scene
 
-actor.SkipTo(400, 400);
-actor.Direction = DI_DOWN;
-actor.Active = true;
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -16,7 +13,10 @@ global Statecalabozo;
 if(Statecalabozo==null)
 {
   Statecalabozo.Visited = false;
-  // add scene states here
+
+  actor.SkipTo(400, 400);
+  actor.Direction = DI_DOWN;
+  actor.Active = true;
 }
 
 
@@ -33,6 +33,13 @@ if(!Statecalabozo.Visited)
 
   actor.Talk("Uhh.. ¿Que mierda pasó anoche? ¿Me habrán drogado y violado?");
   actor.Talk("Ahh. Ahora recuerdo. Me pegaron duro cuando explotó el petardo");
+
+} else {
+
+  actor.SkipTo(610, 369);
+  actor.GoTo(601, 369);
+  actor.TurnTo(DI_LEFT);
+  actor.Active = true;
 
 }
 

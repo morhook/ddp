@@ -65,7 +65,7 @@ SCENE {
       SCALE=0
       ALPHA_COLOR { 255,255,255 }
       ALPHA = 255
-      EDITOR_SELECTED=TRUE
+      EDITOR_SELECTED=FALSE
       POINT {212,421}
       POINT {904,427}
       POINT {920,600}
@@ -73,15 +73,42 @@ SCENE {
       POINT {4,508}
     }
 
+    ENTITY {
+      NAME="door"
+      CAPTION=""
+      ACTIVE=TRUE
+      X=38
+      Y=509
+      SCALABLE=TRUE
+      INTERACTIVE=TRUE
+      COLORABLE=TRUE
+      EDITOR_SELECTED=TRUE
+      WALK_TO_X=0
+      WALK_TO_Y=0
+      SCRIPT="scenes\calabozo2\scr\door.script"
+      CURSOR="sprites\system\arrow_left.sprite"
+      REGION {
+        NAME="<unnamed>"
+        CAPTION=""
+        ACTIVE=TRUE
+        EDITOR_SELECTED_POINT=-1
+        POINT {1,138}
+        POINT {79,167}
+        POINT {80,476}
+        POINT {-3,509}
+      }
+
+    }
+
   }
 
   ; ----- scale levels
   SCALE_LEVEL {
-    Y=502
+    Y=419
     SCALE=70
   }
   SCALE_LEVEL {
-    Y=600
+    Y=511
     SCALE=100
   }
   ; ----- rotation levels

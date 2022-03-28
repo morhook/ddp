@@ -1,0 +1,26 @@
+#include "scripts\base.inc"
+
+
+////////////////////////////////////////////////////////////////////////////////
+on "LookAt"
+{
+  actor.GoToObject(this);
+  actor.Talk("Es una puerta. No creo que te pueda decir algo mas que eso");
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+on "Talk"
+{
+  actor.GoToObject(this);
+  actor.Talk("Te fumaste algo?");
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+on "LeftClick"
+{
+  actor.GoToObject(this);
+  Game.ChangeScene("scenes/calabozo/calabozo.scene");
+}
