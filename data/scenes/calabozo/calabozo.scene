@@ -100,15 +100,18 @@ SCENE {
       ALPHA_COLOR { 255,255,255 }
       ALPHA = 255
       EDITOR_SELECTED=TRUE
-      POINT {392,344}
+      POINT {374,336}
       POINT {620,362}
       POINT {621,436}
       POINT {584,448}
       POINT {553,476}
-      POINT {362,466}
+      POINT {446,479}
+      POINT {438,459}
+      POINT {294,443}
+      POINT {250,472}
       POINT {182,470}
-      POINT {241,436}
-      POINT {300,434}
+      POINT {229,432}
+      POINT {288,428}
       POINT {354,388}
       POINT {322,375}
     }
@@ -117,8 +120,8 @@ SCENE {
       NAME="calaveras"
       CAPTION=""
       ACTIVE=TRUE
-      X=522
-      Y=416
+      X=516
+      Y=410
       SCALABLE=FALSE
       INTERACTIVE=FALSE
       COLORABLE=FALSE
@@ -177,7 +180,7 @@ SCENE {
 
   ; ----- scale levels
   SCALE_LEVEL {
-    Y=342
+    Y=336
     SCALE=30
   }
   SCALE_LEVEL {
