@@ -48,7 +48,7 @@ NumPlugins=0
 
 [Filter:Exclude]
 Active=1
-Mask=*.dci;*.bak;*.tmp;*.inc
+Mask=*.dci;*.bak;*.tmp;*.inc; *.xcf
 
 [Filter:Uncompressed]
 Active=1

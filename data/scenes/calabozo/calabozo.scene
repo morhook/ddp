@@ -96,10 +96,10 @@ SCENE {
       BLOCKED=FALSE
       DECORATION=FALSE
       ACTIVE=TRUE
-      SCALE=24
+      SCALE=0
       ALPHA_COLOR { 255,255,255 }
       ALPHA = 255
-      EDITOR_SELECTED=FALSE
+      EDITOR_SELECTED=TRUE
       POINT {392,344}
       POINT {620,362}
       POINT {621,436}
@@ -164,7 +164,7 @@ SCENE {
       SCALE=0
       ALPHA_COLOR { 255,255,255 }
       ALPHA = 255
-      EDITOR_SELECTED=TRUE
+      EDITOR_SELECTED=FALSE
       POINT {524,380}
       POINT {552,393}
       POINT {552,409}
@@ -177,12 +177,12 @@ SCENE {
 
   ; ----- scale levels
   SCALE_LEVEL {
-    Y=339
-    SCALE=70
+    Y=342
+    SCALE=30
   }
   SCALE_LEVEL {
-    Y=472
-    SCALE=100
+    Y=480
+    SCALE=50
   }
   ; ----- rotation levels
   
