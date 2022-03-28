@@ -1,0 +1,33 @@
+#include "scripts\base.inc"
+
+
+////////////////////////////////////////////////////////////////////////////////
+on "LookAt"
+{
+  actor.GoToObject(this);
+  actor.Talk("Parece que sos Rodr. Algo me huele sospechoso de este sótano.");
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+on "Take"
+{
+  actor.GoToObject(this);
+  actor.Talk("No me gustaría llevarme esto a mi casa digamos.");
+  actor.Talk("Aparte que es muy grande");
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+on "Talk"
+{
+  actor.GoToObject(this);
+  actor.Talk("Como llegaste aquí? Pensé que te habían hechado nada mas");
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+on "LeftClick"
+{
+  actor.GoToObject(this);
+}
