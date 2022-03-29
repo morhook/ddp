@@ -99,7 +99,7 @@ SCENE {
       SCALE=0
       ALPHA_COLOR { 255,255,255 }
       ALPHA = 255
-      EDITOR_SELECTED=TRUE
+      EDITOR_SELECTED=FALSE
       POINT {374,336}
       POINT {620,362}
       POINT {621,436}
@@ -120,15 +120,30 @@ SCENE {
       NAME="calaveras"
       CAPTION=""
       ACTIVE=TRUE
-      X=516
-      Y=410
+      X=500
+      Y=405
+      SCALABLE=FALSE
+      INTERACTIVE=FALSE
+      COLORABLE=FALSE
+      EDITOR_SELECTED=TRUE
+      WALK_TO_X=0
+      WALK_TO_Y=0
+      SPRITE="sprites\calaveras.png"
+    }
+
+    ENTITY {
+      NAME="pasadizo_img"
+      CAPTION=""
+      ACTIVE=TRUE
+      X=604
+      Y=152
       SCALABLE=FALSE
       INTERACTIVE=FALSE
       COLORABLE=FALSE
       EDITOR_SELECTED=FALSE
       WALK_TO_X=0
       WALK_TO_Y=0
-      SPRITE="sprites\calaveras.png"
+      SPRITE="scenes\calabozo\pasadizo.png"
     }
 
     ENTITY {
