@@ -70,14 +70,14 @@ SCENE {
 
     ENTITY {
       NAME="libro"
-      CAPTION=""
+      CAPTION="libro"
       ACTIVE=TRUE
       X=488
       Y=370
       SCALABLE=FALSE
       INTERACTIVE=TRUE
       COLORABLE=FALSE
-      EDITOR_SELECTED=FALSE
+      EDITOR_SELECTED=TRUE
       ITEM="libro"
       WALK_TO_X=0
       WALK_TO_Y=0
@@ -125,7 +125,7 @@ SCENE {
       SCALABLE=FALSE
       INTERACTIVE=FALSE
       COLORABLE=FALSE
-      EDITOR_SELECTED=TRUE
+      EDITOR_SELECTED=FALSE
       WALK_TO_X=0
       WALK_TO_Y=0
       SPRITE="sprites\calaveras.png"

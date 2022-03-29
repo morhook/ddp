@@ -75,14 +75,14 @@ SCENE {
 
     ENTITY {
       NAME="Rodr"
-      CAPTION=""
+      CAPTION="esqueleto Rodr"
       ACTIVE=TRUE
       X=175
       Y=458
       SCALABLE=TRUE
       INTERACTIVE=TRUE
       COLORABLE=TRUE
-      EDITOR_SELECTED=TRUE
+      EDITOR_SELECTED=FALSE
       WALK_TO_X=0
       WALK_TO_Y=0
       SCRIPT="scenes\calabozo2\scr\skeleton_rodr.script"
@@ -100,8 +100,86 @@ SCENE {
     }
 
     ENTITY {
-      NAME="door"
-      CAPTION=""
+      NAME="linares"
+      CAPTION="esqueleto linares"
+      ACTIVE=TRUE
+      X=376
+      Y=455
+      SCALABLE=TRUE
+      INTERACTIVE=TRUE
+      COLORABLE=TRUE
+      EDITOR_SELECTED=FALSE
+      WALK_TO_X=0
+      WALK_TO_Y=0
+      SCRIPT="scenes\calabozo2\scr\linares.script"
+      REGION {
+        NAME="<unnamed>"
+        CAPTION=""
+        ACTIVE=TRUE
+        EDITOR_SELECTED_POINT=-1
+        POINT {315,185}
+        POINT {415,185}
+        POINT {438,455}
+        POINT {348,455}
+      }
+
+    }
+
+    ENTITY {
+      NAME="sorrentino"
+      CAPTION="profesor sorrentino"
+      ACTIVE=TRUE
+      X=734
+      Y=462
+      SCALABLE=TRUE
+      INTERACTIVE=TRUE
+      COLORABLE=TRUE
+      EDITOR_SELECTED=FALSE
+      WALK_TO_X=0
+      WALK_TO_Y=0
+      SCRIPT="scenes\calabozo2\scr\sorrentino.script"
+      REGION {
+        NAME="<unnamed>"
+        CAPTION=""
+        ACTIVE=TRUE
+        EDITOR_SELECTED_POINT=-1
+        POINT {674,191}
+        POINT {790,189}
+        POINT {798,462}
+        POINT {670,462}
+      }
+
+    }
+
+    ENTITY {
+      NAME="carreto"
+      CAPTION="esqueleto carreto"
+      ACTIVE=TRUE
+      X=1029
+      Y=472
+      SCALABLE=TRUE
+      INTERACTIVE=TRUE
+      COLORABLE=TRUE
+      EDITOR_SELECTED=TRUE
+      WALK_TO_X=0
+      WALK_TO_Y=0
+      SCRIPT="scenes\calabozo2\scr\carreto.script"
+      REGION {
+        NAME="<unnamed>"
+        CAPTION=""
+        ACTIVE=TRUE
+        EDITOR_SELECTED_POINT=-1
+        POINT {958,192}
+        POINT {1100,195}
+        POINT {1081,465}
+        POINT {976,472}
+      }
+
+    }
+
+    ENTITY {
+      NAME="puerta"
+      CAPTION="puerta"
       ACTIVE=TRUE
       X=38
       Y=509
