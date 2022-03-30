@@ -3,23 +3,16 @@
 ; $EDITOR_PROJECT_ROOT_DIR$ ..\..\..\..\
 
 SPRITE {
-  NAME="talk"
-  LOOPING=TRUE
+  NAME=""
+  LOOPING=FALSE
   CONTINUOUS=FALSE
   PRECISE=TRUE
   FRAME {
-    DELAY = 200
+    DELAY = 0
     KEYFRAME=FALSE
-    IMAGE = "actors\beto\rr\00.bmp"
+    IMAGE = "actors\marcelo\uu\00.bmp"
     HOTSPOT {89, 179}
     EDITOR_SELECTED=TRUE
-  }
-
-  FRAME {
-    DELAY = 300
-    KEYFRAME=FALSE
-    IMAGE = "actors\beto\rr\talk.bmp"
-    HOTSPOT {89, 179}
   }
 
 }

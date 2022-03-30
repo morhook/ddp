@@ -1,0 +1,64 @@
+; $EDITOR_PROJECT_ROOT_DIR$ ..\..\..\
+
+ACTOR
+{
+  NAME = "beto"
+  CAPTION=""
+  SCALABLE = TRUE
+  INTERACTIVE = FALSE
+  X = 400
+  Y = 460
+  SCRIPT="actors\marcelo\marcelo.script"
+
+  FONT = "fonts\outline_red.font"
+
+  ANIMATION
+  {
+    NAME       = "idle"
+    
+    LEFT       = "actors\marcelo\ll\stand.sprite"
+    RIGHT      = "actors\marcelo\rr\stand.sprite"
+    UP         = "actors\marcelo\uu\stand.sprite"
+
+  }  
+
+  ANIMATION
+  {
+    NAME       = "walk"
+    
+    LEFT       = "actors\marcelo\ll\walk.sprite"
+    RIGHT      = "actors\marcelo\rr\walk.sprite"
+    UP         = "actors\marcelo\uu\walk.sprite"
+
+  }
+
+  ANIMATION
+  {
+    NAME       = "talk"
+    
+    LEFT       = "actors\marcelo\ll\talk.sprite"
+    RIGHT      = "actors\marcelo\rr\talk.sprite"
+    UP         = "actors\marcelo\uu\talk.sprite"
+
+  }
+
+  ANIMATION
+  {
+    NAME       = "turnleft"
+    
+    LEFT       = "actors\marcelo\ll\turn.sprite"
+    RIGHT      = "actors\marcelo\rr\turn.sprite"
+    UP         = "actors\marcelo\uu\turn.sprite"
+
+  }
+  
+  ANIMATION
+  {
+    NAME       = "turnright"
+    
+    LEFT       = "actors\marcelo\ll\turn.sprite"
+    RIGHT      = "actors\marcelo\rr\turn.sprite"
+    DOWN       = "actors\marcelo\dd\turn.sprite"
+
+  }  
+}

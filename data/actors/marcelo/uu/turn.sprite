@@ -6,7 +6,7 @@ SPRITE
 
   FRAME{
     DELAY = 50
-    IMAGE = "actors\beto\uu\00.bmp"
+    IMAGE = "actors\marcelo\uu\00.bmp"
     HOTSPOT {48,230}
   }
 }

@@ -10,7 +10,7 @@ SPRITE {
   FRAME {
     DELAY = 200
     KEYFRAME=FALSE
-    IMAGE = "actors\beto\uu\00.bmp"
+    IMAGE = "actors\marcelo\uu\00.bmp"
     HOTSPOT {89, 179}
     EDITOR_SELECTED=TRUE
   }
@@ -18,7 +18,7 @@ SPRITE {
   FRAME {
     DELAY = 300
     KEYFRAME=FALSE
-    IMAGE = "actors\beto\uu\00.bmp"
+    IMAGE = "actors\marcelo\uu\00.bmp"
     HOTSPOT {89, 179}
   }
 
