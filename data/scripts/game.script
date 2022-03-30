@@ -19,7 +19,7 @@ global MenuObject = null;
 
 
 // load our main actor
-actor = Game.LoadActor("actors\molly\molly.actor");
+actor = Game.LoadActor("actors\beto\beto.actor");
 Game.MainObject = actor;
 
 // run the "game loop" script
