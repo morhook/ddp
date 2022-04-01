@@ -60,7 +60,7 @@ WINDOW
     EDITOR_PROPERTY
     {
       NAME="Selected"
-      VALUE="True"
+      VALUE="False"
     }
 
   }
@@ -76,6 +76,188 @@ WINDOW
     
     X=100
     Y=0
+    WIDTH=100
+    HEIGHT=50
+    DISABLED=FALSE
+    VISIBLE=TRUE
+    PARENT_NOTIFY=TRUE
+    
+    
+    EDITOR_PROPERTY
+    {
+      NAME="Selected"
+      VALUE="False"
+    }
+
+  }
+  STATIC
+  {
+    NAME="usar"
+    CAPTION=""
+    
+    IMAGE="interface\verbbar\usar.png"
+    TEXT=""
+    TEXT_ALIGN="left"
+    VERTICAL_ALIGN="center"
+    
+    X=200
+    Y=0
+    WIDTH=100
+    HEIGHT=50
+    DISABLED=FALSE
+    VISIBLE=TRUE
+    PARENT_NOTIFY=TRUE
+    
+    
+    EDITOR_PROPERTY
+    {
+      NAME="Selected"
+      VALUE="False"
+    }
+
+  }
+  STATIC
+  {
+    NAME="abrir"
+    CAPTION=""
+    
+    IMAGE="interface\verbbar\abrir.png"
+    TEXT=""
+    TEXT_ALIGN="left"
+    VERTICAL_ALIGN="center"
+    
+    X=0
+    Y=60
+    WIDTH=100
+    HEIGHT=50
+    DISABLED=FALSE
+    VISIBLE=TRUE
+    PARENT_NOTIFY=TRUE
+    
+    
+    EDITOR_PROPERTY
+    {
+      NAME="Selected"
+      VALUE="False"
+    }
+
+  }
+  STATIC
+  {
+    NAME="mirar"
+    CAPTION=""
+    
+    IMAGE="interface\verbbar\mirar.png"
+    TEXT=""
+    TEXT_ALIGN="left"
+    VERTICAL_ALIGN="center"
+    
+    X=100
+    Y=60
+    WIDTH=100
+    HEIGHT=50
+    DISABLED=FALSE
+    VISIBLE=TRUE
+    PARENT_NOTIFY=TRUE
+    
+    
+    EDITOR_PROPERTY
+    {
+      NAME="Selected"
+      VALUE="False"
+    }
+
+  }
+  STATIC
+  {
+    NAME="empujar"
+    CAPTION=""
+    
+    IMAGE="interface\verbbar\empujar.png"
+    TEXT=""
+    TEXT_ALIGN="left"
+    VERTICAL_ALIGN="center"
+    
+    X=200
+    Y=60
+    WIDTH=100
+    HEIGHT=50
+    DISABLED=FALSE
+    VISIBLE=TRUE
+    PARENT_NOTIFY=TRUE
+    
+    
+    EDITOR_PROPERTY
+    {
+      NAME="Selected"
+      VALUE="False"
+    }
+
+  }
+  STATIC
+  {
+    NAME="cerrar"
+    CAPTION=""
+    
+    IMAGE="interface\verbbar\cerrar.png"
+    TEXT=""
+    TEXT_ALIGN="left"
+    VERTICAL_ALIGN="center"
+    
+    X=0
+    Y=120
+    WIDTH=100
+    HEIGHT=50
+    DISABLED=FALSE
+    VISIBLE=TRUE
+    PARENT_NOTIFY=TRUE
+    
+    
+    EDITOR_PROPERTY
+    {
+      NAME="Selected"
+      VALUE="False"
+    }
+
+  }
+  STATIC
+  {
+    NAME="hablar"
+    CAPTION=""
+    
+    IMAGE="interface\verbbar\hablar.png"
+    TEXT=""
+    TEXT_ALIGN="left"
+    VERTICAL_ALIGN="center"
+    
+    X=100
+    Y=120
+    WIDTH=100
+    HEIGHT=50
+    DISABLED=FALSE
+    VISIBLE=TRUE
+    PARENT_NOTIFY=TRUE
+    
+    
+    EDITOR_PROPERTY
+    {
+      NAME="Selected"
+      VALUE="False"
+    }
+
+  }
+  STATIC
+  {
+    NAME="tirar"
+    CAPTION=""
+    
+    IMAGE="interface\verbbar\tirar.png"
+    TEXT=""
+    TEXT_ALIGN="left"
+    VERTICAL_ALIGN="center"
+    
+    X=200
+    Y=120
     WIDTH=100
     HEIGHT=50
     DISABLED=FALSE
