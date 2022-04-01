@@ -24,8 +24,8 @@ INVENTORY_BOX
     
     TITLE_ALIGN="left"
     
-    X=0
-    Y=500
+    X=300
+    Y=600
     WIDTH=800
     HEIGHT=90
     DISABLED=FALSE

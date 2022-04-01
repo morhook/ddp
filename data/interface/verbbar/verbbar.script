@@ -1,0 +1,4 @@
+#include "scripts\base.inc"
+#include "scripts\keys.inc"
+
+this.xResult = false;

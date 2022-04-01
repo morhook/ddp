@@ -14,6 +14,9 @@ WinMenu.Visible = false;
 var win = Game.LoadWindow("interface\system\caption.window");
 global WinCaption = win.GetControl("caption");
 
+// load the "verbbar" window
+var VerbWindow = Game.LoadWindow("interface/verbbar/verbbar.window");
+VerbWindow.Visible = true;
 
 global MenuObject = null;
 
