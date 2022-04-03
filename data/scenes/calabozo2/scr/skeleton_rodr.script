@@ -2,7 +2,7 @@
 
 
 ////////////////////////////////////////////////////////////////////////////////
-on "LookAt"
+on "Mirar"
 {
   actor.GoToObject(this);
   actor.Talk("Parece que sos Rodr. Algo me huele sospechoso de este sótano.");
@@ -10,7 +10,7 @@ on "LookAt"
 
 
 ////////////////////////////////////////////////////////////////////////////////
-on "Take"
+on "Agarrar"
 {
   actor.GoToObject(this);
   actor.Talk("No me gustaría llevarme esto a mi casa digamos.");
@@ -19,7 +19,7 @@ on "Take"
 
 
 ////////////////////////////////////////////////////////////////////////////////
-on "Talk"
+on "Hablar"
 {
   actor.GoToObject(this);
   actor.Talk("Como llegaste aquí? Pensé que te habían echado nada mas");

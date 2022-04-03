@@ -2,7 +2,7 @@
 
 
 ////////////////////////////////////////////////////////////////////////////////
-on "LookAt"
+on "Mirar"
 {
   actor.GoToObject(this);
   actor.Talk("Profesor Sorrentino! Empiezo a sospechar que algo está mal en este Colegio");
@@ -10,7 +10,7 @@ on "LookAt"
 
 
 ////////////////////////////////////////////////////////////////////////////////
-on "Take"
+on "Agarrar"
 {
   actor.GoToObject(this);
   actor.Talk("Ya se me está cortando el humor");
@@ -18,7 +18,7 @@ on "Take"
 
 
 ////////////////////////////////////////////////////////////////////////////////
-on "Talk"
+on "Hablar"
 {
   actor.GoToObject(this);
   actor.Talk("Todavía le debo una prueba de Lengua!");

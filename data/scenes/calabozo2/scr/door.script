@@ -2,7 +2,7 @@
 
 
 ////////////////////////////////////////////////////////////////////////////////
-on "LookAt"
+on "Mirar"
 {
   actor.GoToObject(this);
   actor.Talk("Es una puerta. No creo que te pueda decir algo mas que eso");
@@ -11,7 +11,7 @@ on "LookAt"
 
 
 ////////////////////////////////////////////////////////////////////////////////
-on "Talk"
+on "Hablar"
 {
   actor.GoToObject(this);
   actor.Talk("Te fumaste algo?");

@@ -2,14 +2,14 @@
 
 
 ////////////////////////////////////////////////////////////////////////////////
-on "LookAt"
+on "Mirar"
 {
   actor.Talk("Debería leer esto....");
   actor.Talk("Podría tener información importante para poder salir de aquí!");
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-on "Take"
+on "Agarrar"
 {
   Game.SelectedItem = "libro";
 }
