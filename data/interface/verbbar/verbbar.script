@@ -12,3 +12,38 @@ on "dar"
 {
   Game.SelectedVerb = "Dar";
 }
+
+on "usar"
+{
+  Game.SelectedVerb = "Usar";
+}
+
+on "abrir"
+{
+  Game.SelectedVerb = "Abrir";
+}
+
+on "mirar"
+{
+  Game.SelectedVerb = "Mirar";
+}
+
+on "empujar"
+{
+  Game.SelectedVerb = "Empujar";
+}
+
+on "cerrar"
+{
+  Game.SelectedVerb = "Cerrar";
+}
+
+on "hablar"
+{
+  Game.SelectedVerb = "Hablar";
+}
+
+on "tirar"
+{
+  Game.SelectedVerb = "Tirar";
+}
