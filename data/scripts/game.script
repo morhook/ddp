@@ -6,10 +6,6 @@ Keyboard = Game.Keyboard;
 Scene = Game.Scene;
 
 
-// load the right-click menu
-global WinMenu = Game.LoadWindow("interface\menu\menu.window");
-WinMenu.Visible = false;
-
 // load the "caption" window
 var win = Game.LoadWindow("interface\system\caption.window");
 global WinCaption = win.GetControl("caption");
@@ -91,29 +87,15 @@ on "RightClick"
 
   var ActObj = Game.ActiveObject;
 
-  // is the righ-click menu visible? hide it
-  if(WinMenu.Visible == true) WinMenu.Visible = false;
-  else if(ActObj!=null)
+  if(ActObj!=null)
   {
     // if the clicked object can handle any of the "verbs", display the right-click menu
-    if(ActObj.CanHandleEvent("Take") || ActObj.CanHandleEvent("Talk") || ActObj.CanHandleEvent("LookAt"))
+    if(ActObj.CanHandleEvent("Agarrar") || ActObj.CanHandleEvent("Talk") || ActObj.CanHandleEvent("LookAt"))
     {
       // store the clicked object in a global variable MenuObject
       MenuObject = Game.ActiveObject;
-      var Caption = WinMenu.GetControl("caption");
-      Caption.Text = MenuObject.Caption;
-
-      // adjust menu's position
-      WinMenu.X = Game.MouseX - WinMenu.Width / 2;
-      if(WinMenu.X < 0) WinMenu.X = 0;
-      if(WinMenu.X+WinMenu.Width>Game.ScreenWidth) WinMenu.X = Game.ScreenWidth-WinMenu.Width;
-
-      WinMenu.Y = Game.MouseY - WinMenu.Height / 2;
-      if(WinMenu.Y<0) WinMenu.Y = 0;
-      if(WinMenu.Y+WinMenu.Height>Game.ScreenHeight) WinMenu.Y = Game.ScreenHeight-WinMenu.Height;
-
-      // and show the right-click menu
-      WinMenu.Visible = true;
+	  
+	  ActObj.ApplyEvent("Agarrar");
 
       // stop the actor from whatever he was going to do
       actor.Reset();
