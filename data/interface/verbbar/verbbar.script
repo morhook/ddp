@@ -2,3 +2,13 @@
 #include "scripts\keys.inc"
 
 this.xResult = false;
+
+on "agarrar"
+{
+  Game.SelectedVerb = "Agarrar";
+}
+
+on "dar"
+{
+  Game.SelectedVerb = "Dar";
+}

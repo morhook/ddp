@@ -22,7 +22,7 @@ on "Take"
 on "Talk"
 {
   actor.GoToObject(this);
-  actor.Talk("Como llegaste aquí? Pensé que te habían hechado nada mas");
+  actor.Talk("Como llegaste aquí? Pensé que te habían echado nada mas");
 }
 
 

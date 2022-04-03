@@ -18,6 +18,8 @@ global WinCaption = win.GetControl("caption");
 var VerbWindow = Game.LoadWindow("interface/verbbar/verbbar.window");
 VerbWindow.Visible = true;
 
+Game.SelectedVerb = "Ir a";
+
 global MenuObject = null;
 
 
@@ -45,23 +47,34 @@ on "LeftClick"
     if(ActObj.Type=="item" && Game.SelectedItem==null)
     {
       Game.SelectedItem = ActObj;
+	  
     }
     // using an inventory item on another object
     else if(Game.SelectedItem != null && Game.SelectedItem!=ActObj)
     {
       var Item = Game.SelectedItem;
+	  
       if(ActObj.CanHandleEvent(Item.Name)) ActObj.ApplyEvent(Item.Name);
       else if(Item.CanHandleEvent("default-use")) Item.ApplyEvent("default-use");
       else if(ActObj.CanHandleEvent("default-use")) ActObj.ApplyEvent("default-use");
       else actor.Talk("I can't use these things together.");
     }
     // just a simple click
-    else ActObj.ApplyEvent("LeftClick");
+    else 
+	{
+	   if(Game.SelectedVerb != "Ir a")
+	   {
+	     if(ActObj.CanHandleEvent(Game.SelectedVerb)) ActObj.ApplyEvent(Game.SelectedVerb);
+		
+	   }
+	   else ActObj.ApplyEvent("LeftClick");
+	}
   }
   // else propagate the LeftClick event to a scene
   else
   {
     Scene.ApplyEvent("LeftClick");
+	Game.SelectedVerb = "Ir a";
   }
 }
 
