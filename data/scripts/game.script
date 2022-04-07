@@ -58,11 +58,22 @@ on "LeftClick"
 	{
 	   if(Game.SelectedVerb != "Ir a")
 	   {
+	     Game.Msg(Game.SelectedVerb);
+		 Game.Msg(ActObj.CanHandleEvent("Mirar"));
+		 Game.Msg(ActObj.CanHandleEvent("Agarrar"));
 	     if(ActObj.CanHandleEvent(Game.SelectedVerb))
 		 {
 		   ActObj.ApplyEvent(Game.SelectedVerb);
 		 } else {
+		   if (Game.SelectedVerb == "Dar") actor.Talk("No debería deshacerme de eso");
+		   if (Game.SelectedVerb == "Agarrar") actor.Talk("No puedo agarrar eso!");
+		   if (Game.SelectedVerb == "Usar") actor.Talk("No puedo usar eso!");
 		   if (Game.SelectedVerb == "Abrir") actor.Talk("No puedo abrir eso!");
+		   if (Game.SelectedVerb == "Mirar") actor.Talk("Esto es algo común, no se que decirte");
+		   if (Game.SelectedVerb == "Empujar") actor.Talk("Está duro. Empujo y nada");
+		   if (Game.SelectedVerb == "Cerrar") actor.Talk("No puedo cerrar eso");
+		   if (Game.SelectedVerb == "Hablar") actor.Talk("No puedo hablar con un objeto inanimado");
+		   if (Game.SelectedVerb == "Tirar") actor.Talk("Está RE duro. Tiro y tiro.");
 		 }
 		 Game.SelectedVerb = "Ir a";
 	   }

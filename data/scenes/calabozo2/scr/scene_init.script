@@ -2,12 +2,12 @@
 
 // here comes the stuff which initializes the scene
 
-actor.X = 46;
-actor.Y = 497;
-
+actor.SkipTo(99, 512);
 actor.Direction = DI_RIGHT;
 actor.Active = true;
 
+actor.GoTo(99, 512);
+actor.TurnTo(DI_RIGHT);
 
 ////////////////////////////////////////////////////////////////////////////////
 // scene state
