@@ -1,0 +1,38 @@
+#include "scripts\base.inc"
+
+// here comes the stuff which initializes the scene
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+// scene state
+global Stateddp_logo;
+
+
+// default values
+if(Stateddp_logo==null)
+{
+  Stateddp_logo.Visited = false;
+  // add scene states here
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+// setup scene according to state variables
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+if(!Stateddp_logo.Visited)
+{
+  Stateddp_logo.Visited = true;
+
+  // this is our first visit in this scene...
+}
+
+Sleep(2000);
+
+Game.ChangeScene("scenes/calabozo/calabozo.scene");
+Game.Interactive = true;
+

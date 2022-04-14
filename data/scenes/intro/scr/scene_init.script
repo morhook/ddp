@@ -1,22 +1,31 @@
 #include "scripts\base.inc"
 
-// here comes the stuff which initializes the scene
+actor.Active = false;
+Game.Interactive = false;
+Game.PlayVideo("scenes/intro/0001-0250.avi");
 
-actor.SkipTo(400, 400);
-actor.Direction = DI_DOWN;
-actor.Active = true;
+Sleep(2000);
+
 
 
 ////////////////////////////////////////////////////////////////////////////////
 // scene state
 global Stateintro;
-
+var chancho;
 
 // default values
 if(Stateintro==null)
 {
   Stateintro.Visited = false;
-  // add scene states here
+  // cargar nuestro primer actor. el chancho
+  chancho = Game.LoadActor("actors\chancho\chancho.actor");
+  Game.MainObject = chancho;
+  
+  Sleep(2000);
+  chancho.Talk("Soy el Chancho. Tiemblen ante mi mierdas");
+  chancho.Talk("Quiero que los trabajos se hagan mas rapido");
+  chancho.Talk("Es que acaso no tienen miedo que venga el Jefe a controlar el avance?");
+
 }
 
 
@@ -33,4 +42,8 @@ if(!Stateintro.Visited)
 
   // this is our first visit in this scene...
 }
+
+chancho.Active = false;
+Game.ChangeScene("scenes/intro/ddp_logo.scene");
+
 

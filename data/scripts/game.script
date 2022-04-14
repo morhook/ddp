@@ -5,23 +5,18 @@
 Keyboard = Game.Keyboard;
 Scene = Game.Scene;
 
-
 // load the "caption" window
 var win = Game.LoadWindow("interface\system\caption.window");
 global WinCaption = win.GetControl("caption");
 
 // load the "verbbar" window
-var VerbWindow = Game.LoadWindow("interface/verbbar/verbbar.window");
+global VerbWindow = Game.LoadWindow("interface/verbbar/verbbar.window");
 VerbWindow.Visible = true;
 
 Game.SelectedVerb = "Ir a";
 
 global MenuObject = null;
 
-
-// load our main actor
-actor = Game.LoadActor("actors\marcelo\marcelo.actor");
-Game.MainObject = actor;
 
 // run the "game loop" script
 Game.AttachScript("scripts\game_loop.script");
@@ -31,6 +26,9 @@ Game.PlayMusic("music\calabozo.ogg");
 // which scene to load?
 Game.ChangeScene(Game.StartupScene);
 
+// load our main actor
+actor = Game.LoadActor("actors\marcelo\marcelo.actor");
+Game.MainObject = actor;
 
 ////////////////////////////////////////////////////////////////////////////////
 on "LeftClick"
