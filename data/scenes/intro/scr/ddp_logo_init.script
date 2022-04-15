@@ -32,7 +32,7 @@ if(!Stateddp_logo.Visited)
 }
 
 Sleep(2000);
+Game.Interactive = true;
 
 Game.ChangeScene("scenes/calabozo/calabozo.scene");
-Game.Interactive = true;
 
