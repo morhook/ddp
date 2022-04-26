@@ -25,6 +25,7 @@ if(Stateintro==null)
   Sleep(2000);
   chancho.Talk("Soy el Chancho. Tiemblen ante mi mierdas");
   chancho.Talk("Quiero que los trabajos se hagan mas rapido");
+  chancho.Direction = DI_DOWN;
   chancho.Talk("Es que acaso no tienen miedo que venga el Jefe a controlar el avance?");
 }
 

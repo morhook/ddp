@@ -4,15 +4,22 @@
 
 SPRITE {
   NAME=""
-  LOOPING=FALSE
+  LOOPING=TRUE
   CONTINUOUS=FALSE
   PRECISE=TRUE
   FRAME {
-    DELAY = 0
+    DELAY = 200
     KEYFRAME=FALSE
     IMAGE = "actors\chancho\dd\00.bmp"
     HOTSPOT {114, 210}
     EDITOR_SELECTED=TRUE
+  }
+
+  FRAME {
+    DELAY = 300
+    KEYFRAME=FALSE
+    IMAGE = "actors\chancho\dd\talk.bmp"
+    HOTSPOT {114, 210}
   }
 
 }
