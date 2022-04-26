@@ -21,8 +21,6 @@ global MenuObject = null;
 // run the "game loop" script
 Game.AttachScript("scripts\game_loop.script");
 
-Game.PlayMusic("music\calabozo.ogg");
-
 // which scene to load?
 Game.ChangeScene(Game.StartupScene);
 

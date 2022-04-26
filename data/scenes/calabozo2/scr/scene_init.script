@@ -18,7 +18,7 @@ global Statecalabozo2;
 if(Statecalabozo2==null)
 {
   Statecalabozo2.Visited = false;
-  // add scene states here
+  Game.PlayMusic("music\calabozo.ogg");
 }
 
 

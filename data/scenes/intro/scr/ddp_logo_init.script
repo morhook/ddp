@@ -8,6 +8,7 @@
 // scene state
 global Stateddp_logo;
 
+Game.PlayMusic("data/scenes/intro/SB Demo 3 - An Icy Planet.ogg");
 
 // default values
 if(Stateddp_logo==null)
@@ -31,7 +32,7 @@ if(!Stateddp_logo.Visited)
   // this is our first visit in this scene...
 }
 
-Sleep(2000);
+Sleep(7000);
 Game.Interactive = true;
 
 Game.ChangeScene("scenes/calabozo/calabozo.scene");
