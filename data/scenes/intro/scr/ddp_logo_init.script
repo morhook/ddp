@@ -1,7 +1,7 @@
 #include "scripts\base.inc"
 
-// here comes the stuff which initializes the scene
-
+actor.Active = false;
+Game.Interactive = false;
 
 
 ////////////////////////////////////////////////////////////////////////////////
