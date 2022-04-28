@@ -3,7 +3,7 @@
 actor.Active = false;
 Game.Interactive = false;
 Sleep(40);
-Game.PlayTheora("scenes/intro/helicopter.ogg");
+Game.PlayTheora("scenes/intro/helicopter-2.ogv");
 Sleep(1000);
 
 
