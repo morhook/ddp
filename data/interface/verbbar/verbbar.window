@@ -42,6 +42,7 @@ WINDOW
     CAPTION=""
     
     IMAGE="interface\verbbar\give.png"
+    IMAGE_HOVER="interface\verbbar\give_hover.png"
     
     TEXT=""
     TEXT_ALIGN="center"
@@ -72,6 +73,7 @@ WINDOW
     CAPTION=""
     
     IMAGE="interface\verbbar\pickup.png"
+    IMAGE_HOVER="interface\verbbar\pickup_hover.png"
     
     TEXT=""
     TEXT_ALIGN="center"
@@ -102,6 +104,8 @@ WINDOW
     CAPTION=""
     
     IMAGE="interface\verbbar\usar.png"
+    IMAGE_HOVER="interface\verbbar\usar_hover.png"
+    
     TEXT=""
     TEXT_ALIGN="left"
     
@@ -131,6 +135,8 @@ WINDOW
     CAPTION=""
     
     IMAGE="interface\verbbar\abrir.png"
+    IMAGE_HOVER="interface\verbbar\abrir_hover.png"
+    
     TEXT=""
     TEXT_ALIGN="left"
     
@@ -160,6 +166,8 @@ WINDOW
     CAPTION=""
     
     IMAGE="interface\verbbar\mirar.png"
+    IMAGE_HOVER="interface\verbbar\mirar_hover.png"
+    
     TEXT=""
     TEXT_ALIGN="left"
     
@@ -189,6 +197,8 @@ WINDOW
     CAPTION=""
     
     IMAGE="interface\verbbar\empujar.png"
+    IMAGE_HOVER="interface\verbbar\empujar_hover.png"
+    
     TEXT=""
     TEXT_ALIGN="left"
     
@@ -218,6 +228,8 @@ WINDOW
     CAPTION=""
     
     IMAGE="interface\verbbar\cerrar.png"
+    IMAGE_HOVER="interface\verbbar\cerrar_hover.png"
+    
     TEXT=""
     TEXT_ALIGN="left"
     
@@ -228,11 +240,11 @@ WINDOW
     DISABLED=FALSE
     VISIBLE=TRUE
     PARENT_NOTIFY=TRUE
-    
     FOCUSABLE=FALSE
     CENTER_IMAGE=FALSE
     PRESSED=FALSE
     PIXEL_PERFECT=FALSE
+    
     
     EDITOR_PROPERTY
     {
@@ -247,6 +259,8 @@ WINDOW
     CAPTION=""
     
     IMAGE="interface\verbbar\hablar.png"
+    IMAGE_HOVER="interface\verbbar\hablar_hover.png"
+    
     TEXT=""
     TEXT_ALIGN="left"
     
@@ -276,6 +290,8 @@ WINDOW
     CAPTION=""
     
     IMAGE="interface\verbbar\tirar.png"
+    IMAGE_HOVER="interface\verbbar\tirar_hover.png"
+    
     TEXT=""
     TEXT_ALIGN="left"
     
@@ -295,7 +311,7 @@ WINDOW
     EDITOR_PROPERTY
     {
       NAME="Selected"
-      VALUE="False"
+      VALUE="True"
     }
 
   }
