@@ -77,11 +77,11 @@ SCENE {
   ; ----- scale levels
   SCALE_LEVEL {
     Y=300
-    SCALE=70
+    SCALE=50
   }
   SCALE_LEVEL {
     Y=696
-    SCALE=100
+    SCALE=60
   }
   ; ----- rotation levels
   
