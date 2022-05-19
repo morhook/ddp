@@ -56,6 +56,50 @@ SCENE {
       SPRITE="scenes\calabozo2\background.bmp"
     }
 
+    ENTITY {
+      NAME="el chipi"
+      CAPTION="el hermano chipi"
+      ACTIVE=TRUE
+      X=1332
+      Y=484
+      SCALABLE=TRUE
+      INTERACTIVE=TRUE
+      COLORABLE=TRUE
+      EDITOR_SELECTED=TRUE
+      WALK_TO_X=0
+      WALK_TO_Y=0
+      REGION {
+        NAME="<unnamed>"
+        CAPTION=""
+        ACTIVE=TRUE
+        EDITOR_SELECTED_POINT=-1
+        POINT {1242,204}
+        POINT {1422,203}
+        POINT {1349,320}
+        POINT {1392,404}
+        POINT {1396,484}
+        POINT {1268,474}
+        POINT {1248,388}
+        POINT {1306,323}
+      }
+
+    }
+
+    ENTITY {
+      NAME="cadera"
+      CAPTION="cadera metalica"
+      ACTIVE=TRUE
+      X=1296
+      Y=315
+      SCALABLE=FALSE
+      INTERACTIVE=TRUE
+      COLORABLE=FALSE
+      EDITOR_SELECTED=FALSE
+      WALK_TO_X=0
+      WALK_TO_Y=0
+      SPRITE="scenes\calabozo2\cadera.png"
+    }
+
     REGION {
       NAME="floor"
       CAPTION=""
@@ -160,7 +204,7 @@ SCENE {
       SCALABLE=TRUE
       INTERACTIVE=TRUE
       COLORABLE=TRUE
-      EDITOR_SELECTED=TRUE
+      EDITOR_SELECTED=FALSE
       WALK_TO_X=0
       WALK_TO_Y=0
       SCRIPT="scenes\calabozo2\scr\carreto.script"
