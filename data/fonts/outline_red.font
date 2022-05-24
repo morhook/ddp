@@ -3,7 +3,7 @@ FONT
   IMAGE = "fonts\outline_red.bmp"
   TRANSPARENT = 255,0,255
   COLUMNS = 32
-  TILE_WIDTH = 12
-  TILE_HEIGHT = 15
+  TILE_WIDTH = 24
+  TILE_HEIGHT = 30
   AUTO_WIDTH = TRUE
 }
