@@ -6,7 +6,7 @@ INVENTORY_BOX
 {
   NAME="<unnamed>"
   CAPTION=""
-  AREA { 30, 12, 770, 77 }
+  AREA { 30, 12, 700, 172 }
   EXCLUSIVE=FALSE
   HIDE_SELECTED=TRUE
   ALWAYS_VISIBLE=FALSE
@@ -26,8 +26,8 @@ INVENTORY_BOX
     
     X=300
     Y=600
-    WIDTH=800
-    HEIGHT=90
+    WIDTH=705
+    HEIGHT=185
     DISABLED=FALSE
     VISIBLE=TRUE
     PARENT_NOTIFY=FALSE
@@ -44,7 +44,7 @@ INVENTORY_BOX
     EDITOR_PROPERTY
     {
       NAME="Selected"
-      VALUE="True"
+      VALUE="False"
     }
 
     BUTTON
@@ -57,16 +57,17 @@ INVENTORY_BOX
       BACK_PRESS="ui_elements\but_pressed.image"
       BACK_DISABLE="ui_elements\but_disabled.image"
       BACK_FOCUS="ui_elements\but_focus.image"
+      IMAGE="ui_elements\arrow_up.bmp"
       FONT="fonts\outline_white.font"
       FONT_DISABLE="fonts\outline_disabled.font"
       
-      TEXT="<"
+      TEXT=""
       TEXT_ALIGN="center"
       
       X=0
-      Y=0
+      Y=12
       WIDTH=30
-      HEIGHT=90
+      HEIGHT=30
       DISABLED=FALSE
       VISIBLE=TRUE
       PARENT_NOTIFY=TRUE
@@ -93,16 +94,17 @@ INVENTORY_BOX
       BACK_PRESS="ui_elements\but_pressed.image"
       BACK_DISABLE="ui_elements\but_disabled.image"
       BACK_FOCUS="ui_elements\but_focus.image"
+      IMAGE="ui_elements\arrow_down.bmp"
       FONT="fonts\outline_white.font"
       FONT_DISABLE="fonts\outline_disabled.font"
       
-      TEXT=">"
+      TEXT=""
       TEXT_ALIGN="center"
       
-      X=770
-      Y=0
+      X=0
+      Y=123
       WIDTH=30
-      HEIGHT=90
+      HEIGHT=30
       DISABLED=FALSE
       VISIBLE=TRUE
       PARENT_NOTIFY=TRUE
