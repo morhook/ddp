@@ -65,7 +65,7 @@ SCENE {
       SCALABLE=TRUE
       INTERACTIVE=TRUE
       COLORABLE=TRUE
-      EDITOR_SELECTED=TRUE
+      EDITOR_SELECTED=FALSE
       WALK_TO_X=0
       WALK_TO_Y=0
       REGION {
@@ -94,9 +94,11 @@ SCENE {
       SCALABLE=FALSE
       INTERACTIVE=TRUE
       COLORABLE=FALSE
-      EDITOR_SELECTED=FALSE
+      EDITOR_SELECTED=TRUE
+      ITEM="palanqueta"
       WALK_TO_X=0
       WALK_TO_Y=0
+      SCRIPT="scenes\calabozo2\scr\cadera.script"
       SPRITE="scenes\calabozo2\cadera.png"
     }
 

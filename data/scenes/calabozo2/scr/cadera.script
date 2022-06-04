@@ -1,0 +1,27 @@
+#include "scripts\base.inc"
+
+
+////////////////////////////////////////////////////////////////////////////////
+on "Mirar"
+{
+  actor.GoToObject(this);
+  actor.Talk("Extraño. Un pedazo parece un poco flojo");
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+on "Agarrar"
+{
+  actor.GoToObject(this);
+  actor.Talk("ahi lo agarrrooooo");
+  Game.TakeItem("palanqueta");
+  actor.Talk("Uff...como costó!");
+  actor.Talk("Ojala El Chipi me perdone");
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+on "LeftClick"
+{
+  actor.GoToObject(this);
+}

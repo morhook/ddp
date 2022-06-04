@@ -8,3 +8,13 @@ ITEM
    CURSOR_HOVER = "items\libro_h.bmp"
    SCRIPT = "items\libro.script"
 }
+ITEM
+{
+   CURSOR_COMBINED = TRUE
+   CAPTION = "Palanqueta"
+   NAME = "palanqueta"
+   IMAGE = "items\palanqueta.bmp"
+   CURSOR = "items\palanqueta.bmp"
+   CURSOR_HOVER = "items\palanqueta.bmp"
+   SCRIPT = "items\palanqueta.script"
+}
