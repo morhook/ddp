@@ -113,7 +113,10 @@ SCENE {
       POINT {229,432}
       POINT {288,428}
       POINT {354,388}
-      POINT {322,375}
+      POINT {335,379}
+      POINT {226,361}
+      POINT {246,341}
+      POINT {346,360}
     }
 
     ENTITY {
@@ -189,6 +192,21 @@ SCENE {
       POINT {518,422}
       POINT {492,416}
       POINT {488,398}
+    }
+
+    ENTITY {
+      NAME="new entity"
+      CAPTION=""
+      ACTIVE=TRUE
+      X=265
+      Y=320
+      SCALABLE=FALSE
+      INTERACTIVE=FALSE
+      COLORABLE=FALSE
+      EDITOR_SELECTED=FALSE
+      WALK_TO_X=0
+      WALK_TO_Y=0
+      SPRITE="scenes\calabozo\escalera.png"
     }
 
   }
