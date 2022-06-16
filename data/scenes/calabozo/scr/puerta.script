@@ -1,0 +1,39 @@
+#include "scripts\base.inc"
+
+
+////////////////////////////////////////////////////////////////////////////////
+on "Mirar"
+{
+  actor.GoToObject(this);
+  actor.Talk("Está re contra blindada!!");
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+on "Agarrar"
+{
+  actor.GoToObject(this);
+  actor.Talk("Que te fumaste?? No me digas que sos de los pincheros");
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+on "Hablar"
+{
+  actor.GoToObject(this);
+  actor.Talk("Abrete Sesamo!");
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+on "LeftClick"
+{
+  //actor.GoToObject(this);
+  actor.GoTo(257, 360);
+  actor.TurnTo(DI_LEFT);
+}
+
+on "Abrir"
+{
+  actor.Talk("Uhh...Está re contra dura. Si al menos tuviera algo metálico y grande para abrirlo");
+}

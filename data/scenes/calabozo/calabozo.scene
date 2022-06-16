@@ -77,7 +77,7 @@ SCENE {
       SCALABLE=FALSE
       INTERACTIVE=TRUE
       COLORABLE=FALSE
-      EDITOR_SELECTED=TRUE
+      EDITOR_SELECTED=FALSE
       ITEM="libro"
       WALK_TO_X=0
       WALK_TO_Y=0
@@ -88,6 +88,22 @@ SCENE {
         VALUE="item"
       }
 
+    }
+
+    ENTITY {
+      NAME="puerta"
+      CAPTION="puerta"
+      ACTIVE=TRUE
+      X=220
+      Y=272
+      SCALABLE=FALSE
+      INTERACTIVE=TRUE
+      COLORABLE=FALSE
+      EDITOR_SELECTED=TRUE
+      WALK_TO_X=257
+      WALK_TO_Y=360
+      SCRIPT="scenes\calabozo\scr\puerta.script"
+      SPRITE="scenes\calabozo\puerta.bmp"
     }
 
     REGION {
