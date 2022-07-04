@@ -31,12 +31,12 @@ while(true){
   if(Game.Interactive && !Game.ResponsesVisible && !WinMenu.Visible) {
     WinCaption.Visible = true;
     Game.InventoryVisible = true;
-	VerbWindow.Visible = true;
+    VerbWindow.Visible = true;
   }
   else if(Game.ResponsesVisible || !Game.Interactive) {
     WinCaption.Visible = false;
     Game.InventoryVisible = false;
-	VerbWindow.Visible = false;
+    VerbWindow.Visible = false;
   }
 
   // go to sleep for 20 miliseconds to allow the engine to perform other tasks
