@@ -11,7 +11,7 @@ ITEM
 ITEM
 {
    CURSOR_COMBINED = TRUE
-   CAPTION = "Palanqueta"
+   CAPTION = "palanqueta"
    NAME = "palanqueta"
    IMAGE = "items\palanqueta.bmp"
    CURSOR = "items\palanqueta.bmp"

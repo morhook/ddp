@@ -14,14 +14,18 @@ while(true){
 
   // save the active object for later
   var ActObj = Game.ActiveObject;
+  var selectedItem = Game.SelectedItem;
 
   WinCaption.X = 0;
   WinCaption.Y = 580;
   WinCaption.Width = Game.ScreenWidth;
   WinCaption.TextAlign = TAL_CENTER;
   var sentencia = Game.SelectedVerb;
-  if (ActObj !=null) {
-   sentencia = sentencia + " " + ActObj.Caption;
+  if (selectedItem != null) {
+	sentencia = sentencia + " " + selectedItem.Caption;
+  }
+  if (ActObj != null) {
+    sentencia = sentencia + " con " + ActObj.Caption;
   }
   
   WinCaption.Text = sentencia;
@@ -38,7 +42,7 @@ while(true){
     Game.InventoryVisible = false;
     VerbWindow.Visible = false;
   }
-
+ 
   // go to sleep for 20 miliseconds to allow the engine to perform other tasks
   // it is important for the "endless" scripts to call the Sleep command, otherwise the game will get stuck
   Sleep(20);
