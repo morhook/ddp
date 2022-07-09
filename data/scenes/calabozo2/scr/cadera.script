@@ -13,8 +13,10 @@ on "Mirar"
 on "Agarrar"
 {
   actor.GoToObject(this);
+  Game.Interactive = false;
   actor.Talk("ahi lo agarrrooooo");
   Game.TakeItem("palanqueta");
+  Game.Interactive = true;
   actor.Talk("Uff...como costó!");
   actor.Talk("Ojala El Chipi me perdone");
 }

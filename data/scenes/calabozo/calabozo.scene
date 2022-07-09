@@ -91,6 +91,32 @@ SCENE {
     }
 
     ENTITY {
+      NAME="pasadizo contaduria"
+      CAPTION=""
+      ACTIVE=TRUE
+      X=230
+      Y=360
+      SCALABLE=TRUE
+      INTERACTIVE=TRUE
+      COLORABLE=TRUE
+      EDITOR_SELECTED=TRUE
+      WALK_TO_X=0
+      WALK_TO_Y=0
+      CURSOR="sprites\system\arrow_left.sprite"
+      REGION {
+        NAME="<unnamed>"
+        CAPTION=""
+        ACTIVE=TRUE
+        EDITOR_SELECTED_POINT=-1
+        POINT {221,282}
+        POINT {240,274}
+        POINT {240,350}
+        POINT {222,360}
+      }
+
+    }
+
+    ENTITY {
       NAME="puerta"
       CAPTION="puerta"
       ACTIVE=TRUE
@@ -99,7 +125,7 @@ SCENE {
       SCALABLE=FALSE
       INTERACTIVE=TRUE
       COLORABLE=FALSE
-      EDITOR_SELECTED=TRUE
+      EDITOR_SELECTED=FALSE
       WALK_TO_X=257
       WALK_TO_Y=360
       SCRIPT="scenes\calabozo\scr\puerta.script"
@@ -154,8 +180,8 @@ SCENE {
       NAME="pasadizo_img"
       CAPTION=""
       ACTIVE=TRUE
-      X=604
-      Y=152
+      X=606
+      Y=154
       SCALABLE=FALSE
       INTERACTIVE=FALSE
       COLORABLE=FALSE
@@ -211,7 +237,7 @@ SCENE {
     }
 
     ENTITY {
-      NAME="new entity"
+      NAME="escalera"
       CAPTION=""
       ACTIVE=TRUE
       X=265

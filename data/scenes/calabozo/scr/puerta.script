@@ -1,7 +1,5 @@
 #include "scripts\base.inc"
 
-
-////////////////////////////////////////////////////////////////////////////////
 on "Mirar"
 {
   actor.GoToObject(this);
@@ -9,7 +7,6 @@ on "Mirar"
 }
 
 
-////////////////////////////////////////////////////////////////////////////////
 on "Agarrar"
 {
   actor.GoToObject(this);
@@ -17,7 +14,6 @@ on "Agarrar"
 }
 
 
-////////////////////////////////////////////////////////////////////////////////
 on "Hablar"
 {
   actor.GoToObject(this);
@@ -25,10 +21,8 @@ on "Hablar"
 }
 
 
-////////////////////////////////////////////////////////////////////////////////
 on "LeftClick"
 {
-  //actor.GoToObject(this);
   actor.GoTo(257, 360);
   actor.TurnTo(DI_LEFT);
 }
@@ -36,4 +30,25 @@ on "LeftClick"
 on "Abrir"
 {
   actor.Talk("Uhh...Está re contra dura. Si al menos tuviera algo metálico y grande para abrirlo");
+}
+
+on "Usar"
+{
+  var Item = Game.SelectedItem;
+  var puerta = Scene.GetNode("puerta");
+  if (Item != null) {
+    if (Item.Name == "palanqueta") {
+      Game.Interactive = false;
+      actor.Talk("Empujando... Uff uff");
+      actor.Talk("Encontraste el camino del jedi");
+      puerta.Active = false;
+      Game.Interactive = true;
+    } else {
+      actor.Talk("No puedo abrir una puerta cerrada con eso");
+    }
+    Game.SelectedItem = null;
+  } else {
+    actor.Talk("intentando abrir");
+    actor.Talk("uhh..no pude.. necesito algo para forzarla");
+  }
 }

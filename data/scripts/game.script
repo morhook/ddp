@@ -46,8 +46,8 @@ on "LeftClick"
       var Item = Game.SelectedItem;
 	  
       if(ActObj.CanHandleEvent(Item.Name)) ActObj.ApplyEvent(Item.Name);
-      else if(Item.CanHandleEvent("default-use")) Item.ApplyEvent("default-use");
-      else if(ActObj.CanHandleEvent("default-use")) ActObj.ApplyEvent("default-use");
+      else if(Item.CanHandleEvent("Usar")) Item.ApplyEvent("Usar");
+      else if(ActObj.CanHandleEvent("Usar")) ActObj.ApplyEvent("Usar");
       else actor.Talk("I can't use these things together.");
     }
     else // item en la pantalla
@@ -61,15 +61,15 @@ on "LeftClick"
 		 {
 		   ActObj.ApplyEvent(Game.SelectedVerb);
 		 } else {
-		   if (Game.SelectedVerb == "Dar") actor.Talk("No debería deshacerme de eso");
+		   if (Game.SelectedVerb == "Dar") actor.Talk("No deberï¿½a deshacerme de eso");
 		   if (Game.SelectedVerb == "Agarrar") actor.Talk("No puedo agarrar eso!");
 		   if (Game.SelectedVerb == "Usar") actor.Talk("No puedo usar eso!");
 		   if (Game.SelectedVerb == "Abrir") actor.Talk("No puedo abrir eso!");
-		   if (Game.SelectedVerb == "Mirar") actor.Talk("Esto es algo común, no se que decirte");
-		   if (Game.SelectedVerb == "Empujar") actor.Talk("Está duro. Empujo y nada");
+		   if (Game.SelectedVerb == "Mirar") actor.Talk("Esto es algo comï¿½n, no se que decirte");
+		   if (Game.SelectedVerb == "Empujar") actor.Talk("Estï¿½ duro. Empujo y nada");
 		   if (Game.SelectedVerb == "Cerrar") actor.Talk("No puedo cerrar eso");
 		   if (Game.SelectedVerb == "Hablar") actor.Talk("No puedo hablar con un objeto inanimado");
-		   if (Game.SelectedVerb == "Tirar") actor.Talk("Está RE duro. Tiro y tiro.");
+		   if (Game.SelectedVerb == "Tirar") actor.Talk("Estï¿½ RE duro. Tiro y tiro.");
 		 }
 		 Game.SelectedVerb = "Ir a";
 	   }
