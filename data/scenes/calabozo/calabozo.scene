@@ -102,6 +102,7 @@ SCENE {
       EDITOR_SELECTED=TRUE
       WALK_TO_X=0
       WALK_TO_Y=0
+      SCRIPT="scenes\calabozo\scr\pasadizo_contaduria.script"
       CURSOR="sprites\system\arrow_left.sprite"
       REGION {
         NAME="<unnamed>"
