@@ -2,8 +2,8 @@
 
 // here comes the stuff which initializes the scene
 
-actor.SkipTo(400, 400);
-actor.Direction = DI_DOWN;
+actor.SkipTo(214, 612);
+actor.Direction = DI_RIGHT;
 actor.Active = true;
 
 
