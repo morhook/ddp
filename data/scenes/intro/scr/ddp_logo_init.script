@@ -8,7 +8,7 @@ Game.Interactive = false;
 // scene state
 global Stateddp_logo;
 
-Game.PlayMusic("data/scenes/intro/SB Demo 3 - An Icy Planet.ogg");
+Game.PlayMusic("scenes/intro/SB Demo 3 - An Icy Planet.ogg");
 
 // default values
 if(Stateddp_logo==null)

@@ -53,7 +53,7 @@ SCENE {
       EDITOR_SELECTED=TRUE
       WALK_TO_X=0
       WALK_TO_Y=0
-      SPRITE="data\sprites\ddp_logo.sprite"
+      SPRITE="sprites\ddp_logo.sprite"
     }
 
     REGION {
