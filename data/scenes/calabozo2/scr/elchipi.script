@@ -1,0 +1,62 @@
+#include "scripts\base.inc"
+
+
+////////////////////////////////////////////////////////////////////////////////
+on "Hablar"
+{
+  actor.GoToObject(this);
+  basic();
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+on "LeftClick"
+{
+  actor.GoToObject(this);
+}
+
+
+function basic() 
+{ 
+	var options; 
+	options[0] = "Lindo ambiente en el calabozo, eh?"; 
+	options[1] = "Estoy triste, porque usualmente usted me daba buenos consejos"; 
+	options[2] = "Disculpas por usar su cadera."; 
+	options[3] = "Sabe algo de este libro del chancho?"; 
+	options[4] = "Hasta luego!"; 
+ 
+	var selected; 
+	while (selected != 4) 
+	{ 
+		Game.AddResponseOnceGame(0,options[0]);	 
+		Game.AddResponse(1,options[1]);	 
+		if (Game.HasItem("palanqueta")) Game.AddResponseOnceGame(2,options[2]);
+		if (Game.HasItem("libro")) Game.AddResponseOnceGame(3,options[3]);
+		
+		Game.AddResponse(4,options[4]);	 
+ 
+		Game.Interactive = true; 
+		selected = Game.GetResponse(); 
+		Game.Interactive = false; 
+ 
+		actor.Talk(options[selected]); // actor says the selected line first 
+ 
+		switch (selected)  //we choose what to do based on the selected option 
+		{ 
+			case 0: 
+				break;	 
+			case 1:  
+			    actor.Talk("Espero que esté en el cielo, como tantas veces usted me enseñó");
+				break;
+			case 2:
+			    actor.Talk("Le pido disculpas por corromper su ya mancillado cuerpo");
+				break;
+			case 3: 
+			    actor.Talk("Su silencio me conmueve.");
+				break;		 
+			case 4: 
+				break;		 
+		} 
+	} 
+	Game.Interactive = true; 
+}
