@@ -54,9 +54,6 @@ on "LeftClick"
 	{
 	   if(Game.SelectedVerb != "Ir a")
 	   {
-	     Game.Msg(Game.SelectedVerb);
-		 Game.Msg(ActObj.CanHandleEvent("Mirar"));
-		 Game.Msg(ActObj.CanHandleEvent("Agarrar"));
 	     if(ActObj.CanHandleEvent(Game.SelectedVerb))
 		 {
 		   ActObj.ApplyEvent(Game.SelectedVerb);
