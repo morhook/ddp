@@ -21,12 +21,21 @@ while(true){
   WinCaption.Width = Game.ScreenWidth;
   WinCaption.TextAlign = TAL_CENTER;
   var sentencia = Game.SelectedVerb;
+  var objetos = new Array();
   if (selectedItem != null) {
-	sentencia = sentencia + " " + selectedItem.Caption;
+    objetos.Push(selectedItem.Caption);
+	
   }
-  if (ActObj != null) {
-    sentencia = sentencia + " con " + ActObj.Caption;
+  if (ActObj != null && ActObj.Caption != null && ActObj.Caption != "") {
+	objetos.Push(ActObj.Caption);
   }
+
+  if (objetos.Length == 2) {
+    sentencia = sentencia + " " + objetos[0] + " con " + objetos[1];
+  } else if (objetos.Length == 1) {
+    sentencia = sentencia + " " + objetos[0];
+  }
+  
   
   WinCaption.Text = sentencia;
 
@@ -42,7 +51,7 @@ while(true){
     Game.InventoryVisible = false;
     VerbWindow.Visible = false;
   }
- 
+   
   // go to sleep for 20 miliseconds to allow the engine to perform other tasks
   // it is important for the "endless" scripts to call the Sleep command, otherwise the game will get stuck
   Sleep(20);
