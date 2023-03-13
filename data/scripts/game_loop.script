@@ -28,6 +28,9 @@ while(true){
   }
   if (ActObj != null && ActObj.Caption != null && ActObj.Caption != "") {
 	objetos.Push(ActObj.Caption);
+	if(ActObj.Type == "item") {
+	  Game.LOG("holaa");
+	}
   }
 
   if (objetos.Length == 2) {
