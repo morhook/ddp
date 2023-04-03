@@ -45,8 +45,8 @@ SCENE {
       NAME="background"
       CAPTION=""
       ACTIVE=TRUE
-      X=112
-      Y=84
+      X=110
+      Y=-20
       SCALABLE=FALSE
       INTERACTIVE=FALSE
       COLORABLE=FALSE
@@ -65,11 +65,36 @@ SCENE {
       SCALE=0
       ALPHA_COLOR { 255,255,255 }
       ALPHA = 255
+      EDITOR_SELECTED=FALSE
+      POINT {181,440}
+      POINT {829,440}
+      POINT {953,582}
+      POINT {75,578}
+    }
+
+    ENTITY {
+      NAME="puerta"
+      CAPTION="puerta"
+      ACTIVE=TRUE
+      X=685
+      Y=445
+      SCALABLE=TRUE
+      INTERACTIVE=TRUE
+      COLORABLE=TRUE
       EDITOR_SELECTED=TRUE
-      POINT {182,544}
-      POINT {830,544}
-      POINT {954,686}
-      POINT {76,682}
+      WALK_TO_X=0
+      WALK_TO_Y=0
+      REGION {
+        NAME="<unnamed>"
+        CAPTION=""
+        ACTIVE=TRUE
+        EDITOR_SELECTED_POINT=-1
+        POINT {600,152}
+        POINT {757,144}
+        POINT {771,442}
+        POINT {607,445}
+      }
+
     }
 
   }
