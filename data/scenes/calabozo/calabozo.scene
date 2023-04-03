@@ -99,7 +99,7 @@ SCENE {
       SCALABLE=TRUE
       INTERACTIVE=TRUE
       COLORABLE=TRUE
-      EDITOR_SELECTED=TRUE
+      EDITOR_SELECTED=FALSE
       WALK_TO_X=0
       WALK_TO_Y=0
       SCRIPT="scenes\calabozo\scr\pasadizo_contaduria.script"
@@ -134,7 +134,7 @@ SCENE {
     }
 
     REGION {
-      NAME="floor"
+      NAME="mezzanine"
       CAPTION=""
       BLOCKED=FALSE
       DECORATION=FALSE
@@ -143,6 +143,39 @@ SCENE {
       ALPHA_COLOR { 255,255,255 }
       ALPHA = 255
       EDITOR_SELECTED=FALSE
+      POINT {225,357}
+      POINT {250,347}
+      POINT {280,348}
+      POINT {388,365}
+      POINT {404,398}
+      POINT {276,366}
+    }
+
+    ENTITY {
+      NAME="escalera"
+      CAPTION=""
+      ACTIVE=TRUE
+      X=265
+      Y=320
+      SCALABLE=FALSE
+      INTERACTIVE=FALSE
+      COLORABLE=FALSE
+      EDITOR_SELECTED=FALSE
+      WALK_TO_X=0
+      WALK_TO_Y=0
+      SPRITE="scenes\calabozo\escalera.png"
+    }
+
+    REGION {
+      NAME="floor"
+      CAPTION=""
+      BLOCKED=FALSE
+      DECORATION=FALSE
+      ACTIVE=TRUE
+      SCALE=0
+      ALPHA_COLOR { 255,255,255 }
+      ALPHA = 255
+      EDITOR_SELECTED=TRUE
       POINT {374,336}
       POINT {620,362}
       POINT {621,436}
@@ -156,9 +189,9 @@ SCENE {
       POINT {229,432}
       POINT {288,428}
       POINT {354,388}
-      POINT {335,379}
-      POINT {226,361}
-      POINT {246,341}
+      POINT {376,388}
+      POINT {403,398}
+      POINT {387,368}
       POINT {346,360}
     }
 
@@ -235,21 +268,6 @@ SCENE {
       POINT {518,422}
       POINT {492,416}
       POINT {488,398}
-    }
-
-    ENTITY {
-      NAME="escalera"
-      CAPTION=""
-      ACTIVE=TRUE
-      X=265
-      Y=320
-      SCALABLE=FALSE
-      INTERACTIVE=FALSE
-      COLORABLE=FALSE
-      EDITOR_SELECTED=FALSE
-      WALK_TO_X=0
-      WALK_TO_Y=0
-      SPRITE="scenes\calabozo\escalera.png"
     }
 
   }

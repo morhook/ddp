@@ -7,12 +7,14 @@
 ////////////////////////////////////////////////////////////////////////////////
 // scene state
 global Statecalabozo;
+global YaVisitadosEsqueletos; 
 
 
 // default values
 if(Statecalabozo==null)
 {
   Statecalabozo.Visited = false;
+  YaVisitadosEsqueletos = false;
 
   actor.SkipTo(400, 400);
   actor.Direction = DI_DOWN;
@@ -36,7 +38,10 @@ if(!Statecalabozo.Visited)
 
 } else {
 
-  Game.PlayMusic("scenes/intro/SB Demo 3 - An Icy Planet.ogg");
+  if (!YaVisitadosEsqueletos) {
+	Game.PlayMusic("scenes/intro/SB Demo 3 - An Icy Planet.ogg");
+	YaVisitadosEsqueletos = true;
+  }
 
   actor.SkipTo(610, 369);
   actor.GoTo(601, 369);
