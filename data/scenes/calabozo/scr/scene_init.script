@@ -43,10 +43,15 @@ if(!Statecalabozo.Visited)
 	YaVisitadosEsqueletos = true;
   }
 
-  actor.SkipTo(610, 369);
-  actor.GoTo(601, 369);
-  actor.TurnTo(DI_LEFT);
-  actor.Active = true;
+  if (Game.PrevScene == "calabozo2") {
+    actor.SkipTo(610, 369);
+    actor.GoTo(601, 369);
+    actor.TurnTo(DI_LEFT);
+    actor.Active = true;
+  } else {
+	actor.SkipTo(260, 360);
+	actor.TurnTo(DI_RIGHT);
+  }
 
 }
 

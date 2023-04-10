@@ -81,7 +81,7 @@ SCENE {
       SCALABLE=TRUE
       INTERACTIVE=TRUE
       COLORABLE=TRUE
-      EDITOR_SELECTED=TRUE
+      EDITOR_SELECTED=FALSE
       WALK_TO_X=0
       WALK_TO_Y=0
       REGION {
@@ -93,6 +93,33 @@ SCENE {
         POINT {757,144}
         POINT {771,442}
         POINT {607,445}
+      }
+
+    }
+
+    ENTITY {
+      NAME="door dungeon"
+      CAPTION="calabozo"
+      ACTIVE=TRUE
+      X=116
+      Y=581
+      SCALABLE=TRUE
+      INTERACTIVE=TRUE
+      COLORABLE=TRUE
+      EDITOR_SELECTED=TRUE
+      WALK_TO_X=0
+      WALK_TO_Y=0
+      SCRIPT="scenes\contaduria\scr\door_dungeon.script"
+      CURSOR="sprites\system\arrow_left.sprite"
+      REGION {
+        NAME="<unnamed>"
+        CAPTION=""
+        ACTIVE=TRUE
+        EDITOR_SELECTED_POINT=-1
+        POINT {69,214}
+        POINT {161,151}
+        POINT {163,468}
+        POINT {70,581}
       }
 
     }
