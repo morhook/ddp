@@ -19,6 +19,7 @@ if(Statecalabozo2==null)
 {
   Statecalabozo2.Visited = false;
   Game.PlayMusic("music\calabozo.ogg");
+  actor.Talk("Oh no!!!! Los profesores echados han sido asesinados");
 }
 
 
