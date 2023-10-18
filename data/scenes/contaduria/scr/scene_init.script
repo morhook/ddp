@@ -31,5 +31,6 @@ if(!Statecontaduria.Visited)
   Statecontaduria.Visited = true;
 
   // this is our first visit in this scene...
+  actor.Talk("Oh! Estoy en la contaduria. Creo que estoy en el colegio todavía");
 }
 

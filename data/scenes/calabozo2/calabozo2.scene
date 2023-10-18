@@ -65,7 +65,7 @@ SCENE {
       SCALABLE=TRUE
       INTERACTIVE=TRUE
       COLORABLE=TRUE
-      EDITOR_SELECTED=TRUE
+      EDITOR_SELECTED=FALSE
       WALK_TO_X=0
       WALK_TO_Y=0
       SCRIPT="scenes\calabozo2\scr\elchipi.script"
@@ -82,6 +82,34 @@ SCENE {
         POINT {1268,474}
         POINT {1248,388}
         POINT {1306,323}
+      }
+
+    }
+
+    ENTITY {
+      NAME="pet"
+      CAPTION="compañero pet"
+      ACTIVE=TRUE
+      X=1691
+      Y=486
+      SCALABLE=TRUE
+      INTERACTIVE=TRUE
+      COLORABLE=TRUE
+      EDITOR_SELECTED=TRUE
+      WALK_TO_X=0
+      WALK_TO_Y=0
+      SCRIPT="scenes\calabozo2\scr\pet.script"
+      REGION {
+        NAME="<unnamed>"
+        CAPTION=""
+        ACTIVE=TRUE
+        EDITOR_SELECTED_POINT=-1
+        POINT {1598,194}
+        POINT {1784,214}
+        POINT {1700,329}
+        POINT {1762,486}
+        POINT {1604,480}
+        POINT {1644,328}
       }
 
     }
