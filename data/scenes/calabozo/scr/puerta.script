@@ -29,11 +29,13 @@ on "LeftClick"
 
 on "Abrir"
 {
+  actor.GoToObject(this);
   actor.Talk("Uhh...Está re contra dura. Si al menos tuviera algo metálico y grande para abrirlo");
 }
 
 on "Usar"
 {
+  actor.GoToObject(this);
   var Item = Game.SelectedItem;
   var puerta = Scene.GetNode("puerta");
   if (Item != null) {
