@@ -106,7 +106,7 @@ SCENE {
       SCALABLE=TRUE
       INTERACTIVE=TRUE
       COLORABLE=TRUE
-      EDITOR_SELECTED=TRUE
+      EDITOR_SELECTED=FALSE
       WALK_TO_X=0
       WALK_TO_Y=0
       SCRIPT="scenes\contaduria\scr\door_dungeon.script"
@@ -120,6 +120,32 @@ SCENE {
         POINT {161,151}
         POINT {163,468}
         POINT {70,581}
+      }
+
+    }
+
+    ENTITY {
+      NAME="escalera"
+      CAPTION="escalera arriba"
+      ACTIVE=TRUE
+      X=899
+      Y=572
+      SCALABLE=TRUE
+      INTERACTIVE=TRUE
+      COLORABLE=TRUE
+      EDITOR_SELECTED=TRUE
+      WALK_TO_X=0
+      WALK_TO_Y=0
+      SCRIPT="scenes\contaduria\scr\escalera.script"
+      REGION {
+        NAME="<unnamed>"
+        CAPTION=""
+        ACTIVE=TRUE
+        EDITOR_SELECTED_POINT=-1
+        POINT {852,126}
+        POINT {942,164}
+        POINT {952,572}
+        POINT {846,458}
       }
 
     }
