@@ -1,2 +1,2 @@
-# eddp
-El Dia Del Petardo
+# ddp
+Dia Del Petardo
