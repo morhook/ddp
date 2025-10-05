@@ -1,0 +1,31 @@
+# Enforce DOS-style line endings for text files.
+* text=auto eol=crlf
+
+# These files should definitely have CRLF line endings
+*.txt text eol=crlf
+*.md text eol=crlf
+*.script text eol=crlf
+*.scene text eol=crlf
+*.actor text eol=crlf
+*.font text eol=crlf
+*.def text eol=crlf
+*.window text eol=crlf
+*.items text eol=crlf
+*.inc text eol=crlf
+*.sprite text eol=crlf
+*.game text eol=crlf
+*.settings text eol=crlf
+*.tab text eol=crlf
+*.gitignore text eol=crlf
+
+# These files are binary and should be left untouched
+*.png binary
+*.bmp binary
+*.jpg binary
+*.ogg binary
+*.ogv binary
+*.mp3 binary
+*.mp4 binary
+*.blend binary
+*.blend1 binary
+*.xcf binary
