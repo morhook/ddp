@@ -33,7 +33,7 @@ if(!Statecalabozo.Visited)
 {
   Statecalabozo.Visited = true;
 
-  actor.Talk("Uhh.. ¿Que mierda pasó anoche? ¿Me habrán drogado y violado?");
+  actor.Talk("Uhh.. Que mierda pasó anoche? Me habrán drogado y violado?");
   actor.Talk("Ahh. Ahora recuerdo. Me pegaron duro cuando explotó el petardo");
 
 } else {
