@@ -1,8 +1,14 @@
 #include "scripts\base.inc"
 
-actor.Active = false;
-Game.Interactive = false;
+global VerbWindow;
+global WinCaption;
 
+Game.Interactive = true;
+
+VerbWindow.Visible = false;
+WinCaption.Visible = false;
+actor.Visible = false;
+actor.Active = false;
 
 ////////////////////////////////////////////////////////////////////////////////
 // scene state
@@ -39,13 +45,22 @@ on "LeftClick"
 	skipped = true;
 }
 
+on "AnyKey"
+{
+    skipped = true;
+}
+
 for (var i=0;i<14;i=i+1) {
   Sleep(500);
   if (skipped == true) 
-    continue;
+    break;
 }
 
-//Sleep(7000);
+VerbWindow.Visible = true;
+WinCaption.Visible = true;
+Game.InventoryVisible = true;
+
+actor.Visible = true;
 Game.Interactive = true;
 
 Game.ChangeScene("scenes/calabozo/calabozo.scene");

@@ -1,5 +1,7 @@
 #include "scripts\base.inc"
 
+global VerbWindow;
+VerbWindow.Visible = false;
 actor.Active = false;
 Game.Interactive = false;
 Sleep(40);
