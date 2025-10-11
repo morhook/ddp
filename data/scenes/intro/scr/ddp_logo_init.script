@@ -32,7 +32,20 @@ if(!Stateddp_logo.Visited)
   // this is our first visit in this scene...
 }
 
-Sleep(7000);
+global skipped = false;
+
+on "LeftClick"
+{
+	skipped = true;
+}
+
+for (var i=0;i<14;i=i+1) {
+  Sleep(500);
+  if (skipped == true) 
+    continue;
+}
+
+//Sleep(7000);
 Game.Interactive = true;
 
 Game.ChangeScene("scenes/calabozo/calabozo.scene");
