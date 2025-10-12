@@ -1,26 +1,28 @@
 #include "scripts\base.inc"
 
 // here comes the stuff which initializes the scene
+
+actor.SkipTo(400, 400);
+actor.Direction = DI_DOWN;
+actor.Active = false;
+
 global VerbWindow;
 global WinCaption;
-VerbWindow.Visible = true;
-WinCaption.Visible = true;
-Game.InventoryVisible = true;
-
-actor.SkipTo(132, 596);
-actor.Direction = DI_RIGHT;
-actor.Active = true;
+VerbWindow.Visible = false;
+WinCaption.Visible = false;
+Game.InventoryVisible = false;
+Game.Interactive = false;
 
 
 ////////////////////////////////////////////////////////////////////////////////
 // scene state
-global Statemapa;
+global Statepropaganda;
 
 
 // default values
-if(Statemapa==null)
+if(Statepropaganda==null)
 {
-  Statemapa.Visited = false;
+  Statepropaganda.Visited = false;
   // add scene states here
 }
 
@@ -32,9 +34,9 @@ if(Statemapa==null)
 
 
 ////////////////////////////////////////////////////////////////////////////////
-if(!Statemapa.Visited)
+if(!Statepropaganda.Visited)
 {
-  Statemapa.Visited = true;
+  Statepropaganda.Visited = true;
 
   // this is our first visit in this scene...
 }

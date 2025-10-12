@@ -3,10 +3,10 @@
 ; $EDITOR_PROJECT_ROOT_DIR$ ..\..\..\
 
 SCENE {
-  NAME="mapa"
+  NAME="propaganda"
   CAPTION=""
   PERSISTENT_STATE=TRUE
-  SCRIPT="scenes\mapa\scr\scene_init.script"
+  SCRIPT="scenes\propaganda\scr\scene_init.script"
   SCRIPT="scripts\scene.script"
   
   ; ----- editor settings
@@ -45,58 +45,15 @@ SCENE {
       NAME="background"
       CAPTION=""
       ACTIVE=TRUE
-      X=22
-      Y=18
+      X=8
+      Y=13
       SCALABLE=FALSE
       INTERACTIVE=FALSE
       COLORABLE=FALSE
-      EDITOR_SELECTED=FALSE
-      WALK_TO_X=0
-      WALK_TO_Y=0
-      SPRITE="scenes\mapa\background.bmp"
-    }
-
-    ENTITY {
-      NAME="pasadizo"
-      CAPTION=""
-      ACTIVE=TRUE
-      X=793
-      Y=161
-      SCALABLE=TRUE
-      INTERACTIVE=TRUE
-      COLORABLE=TRUE
       EDITOR_SELECTED=TRUE
       WALK_TO_X=0
       WALK_TO_Y=0
-      SCRIPT="scenes\mapa\scr\pasadizo.script"
-      CURSOR="sprites\system\arrow_up.sprite"
-      REGION {
-        NAME="<unnamed>"
-        CAPTION=""
-        ACTIVE=TRUE
-        EDITOR_SELECTED_POINT=-1
-        POINT {759,66}
-        POINT {815,66}
-        POINT {828,161}
-        POINT {774,158}
-      }
-
-    }
-
-    ENTITY {
-      NAME="puerta_cerrada"
-      CAPTION="puerta"
-      ACTIVE=TRUE
-      X=738
-      Y=49
-      SCALABLE=FALSE
-      INTERACTIVE=TRUE
-      COLORABLE=FALSE
-      EDITOR_SELECTED=FALSE
-      WALK_TO_X=0
-      WALK_TO_Y=0
-      SCRIPT="scenes\mapa\scr\puerta_cerrada.script"
-      SPRITE="sprites\puerta_cerrada.png"
+      SPRITE="scenes\propaganda\background.bmp"
     }
 
     REGION {
@@ -109,38 +66,22 @@ SCENE {
       ALPHA_COLOR { 255,255,255 }
       ALPHA = 255
       EDITOR_SELECTED=FALSE
-      POINT {81,591}
-      POINT {694,596}
-      POINT {849,433}
-      POINT {84,451}
-      POINT {93,434}
-      POINT {324,427}
-      POINT {126,180}
-      POINT {86,181}
-      POINT {96,168}
-      POINT {981,159}
-      POINT {986,177}
-      POINT {163,183}
-      POINT {383,428}
-      POINT {962,417}
-      POINT {961,431}
-      POINT {907,431}
-      POINT {735,593}
-      POINT {953,591}
-      POINT {953,609}
-      POINT {85,611}
+      POINT {50,50}
+      POINT {976,50}
+      POINT {976,718}
+      POINT {50,718}
     }
 
   }
 
   ; ----- scale levels
   SCALE_LEVEL {
-    Y=10
-    SCALE=55
+    Y=300
+    SCALE=70
   }
   SCALE_LEVEL {
-    Y=652
-    SCALE=55
+    Y=600
+    SCALE=100
   }
   ; ----- rotation levels
   

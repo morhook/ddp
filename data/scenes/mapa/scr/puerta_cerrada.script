@@ -1,0 +1,12 @@
+#include "scripts\base.inc"
+
+
+////////////////////////////////////////////////////////////////////////////////
+on "Abrir"
+{
+  actor.GoToObject(this);
+
+  var puerta = Scene.GetNode("puerta_cerrada");
+  puerta.Active = false;
+   
+}
