@@ -31,6 +31,16 @@ SCENE {
   EDITOR_SHOW_SCALE=TRUE
   
   ; ----- waypoints
+  WAYPOINTS {
+    NAME="new waypoints"
+    EDITOR_SELECTED=TRUE
+    EDITOR_SELECTED_POINT=-1
+    POINT {715,601}
+    POINT {882,427}
+    POINT {355,438}
+    POINT {139,173}
+    POINT {815,171}
+  }
   
   ; ----- layers
   LAYER {
@@ -40,7 +50,7 @@ SCENE {
     WIDTH=1024
     HEIGHT=768
     ACTIVE=TRUE
-    EDITOR_SELECTED=TRUE
+    EDITOR_SELECTED=FALSE
     ENTITY {
       NAME="background"
       CAPTION=""
@@ -65,7 +75,7 @@ SCENE {
       SCALABLE=TRUE
       INTERACTIVE=TRUE
       COLORABLE=TRUE
-      EDITOR_SELECTED=TRUE
+      EDITOR_SELECTED=FALSE
       WALK_TO_X=0
       WALK_TO_Y=0
       SCRIPT="scenes\mapa\scr\pasadizo.script"
