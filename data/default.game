@@ -23,6 +23,5 @@ AD_GAME {
   ITEMS="items\items.items"
   TALK_SKIP_BUTTON="left"
   STARTUP_SCENE="scenes\intro\intro.scene"
-  DEBUG_STARTUP_SCENE="scenes\intro\ddp_logo.scene"
 }
 
