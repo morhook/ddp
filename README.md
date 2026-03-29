@@ -1,7 +1,7 @@
-# ddp
+# ddp 🧨
 Dia Del Petardo 🧨
 
-aka. Day of the Firecracker 🧨
+aka. Day of the Firecracker 
 
 # Teaser
 Many years ago a kid found out his school wasn't the place he was thinking. Any similarity to reality is just a coincidence. 
