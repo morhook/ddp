@@ -8,7 +8,7 @@ Many years ago a kid found out his school wasn't the place he was thinking. Any 
 
 # Published
 
-On [itch.io](https://morhook.itch.io/ddp) it's published a compiled demo. 
+On [itch.io](https://morhook.itch.io/dia-del-petardo) it's published a compiled demo. 
 
 # History
 
