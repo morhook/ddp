@@ -7,4 +7,4 @@ Many years ago a kid found out his school wasn't the place he was thinking. Any 
 
 # Contribute
 
-This game is made with [wintermute engine](http://dead-code.org/home/).
+This game is made with [wintermute engine](http://dead-code.org/home/), please send PRs of ideas of new scenes, characters or code improvements. PRs welcome and never taken for granted. 
