@@ -1,31 +1,32 @@
 # DDP (Dia Del Petardo)
 
-Wintermute Engine adventure game.
+Wintermute Engine 1.x adventure game. Windows-only toolchain.
 
-## Dev Tools
+## Dev
 
-- **ProjectMan** - Compile project → outputs to `packages/`
-- **SceneEdit** - Edit scenes (`.scene` files)
+- **ProjectMan** -- compile project, outputs to `packages/` (Windows GUI only, no CLI)
+- **SceneEdit** -- edit `.scene` files (Windows GUI only)
 - Run `packages/ddp.exe` to test
+- No lint/test/typecheck pipeline exists
 
-## Structure
+## Repo Layout
 
-- `data/` - Game content (scenes, actors, scripts, sprites, items, music, UI)
-- `data/default.game` - Game definition (entry point)
-- `data/scenes/` - Scene folders (each has `.scene` file + `scr/` subfolder)
-- `data/scripts/` - Global scripts (`game.script`, `game_loop.script`, `*.inc`)
-- `packages/` - Compiled output (`ddp.exe`, `data.dcp`)
+- `data/default.game` -- game definition / entry point
+- `data/scripts/` -- global scripts: `game.script` (entry), `game_loop.script`, `scene.script` (shared per-scene), `base.inc`, `const.inc`, `keys.inc`
+- `data/scenes/<name>/` -- scenes with `.scene` file + `scr/` subfolder for per-scene scripts
+- `data/actors/marcelo/` -- main actor; `data/actors/chancho/`
+- `data/items/`, `data/interface/`, `data/fonts/`, `data/sprites/`, `data/music/`, `data/ui_elements/`
+- `packages/` -- compiled output (`ddp.exe`, `data.dcp`); gitignored
+- `*.xcf` -- GIMP source files, excluded from compiled package
+- Scene scripts under `data/scenes/<name>/scr/`
 
-## Scripts
+## Scripting
 
 - Wintermute scripting language (`.script` files)
-- `#include` pulls in `.inc` header files
-- Entry: `default.game` → `scripts\game.script`
-- Actor: `actors\marcelo\marcelo.actor`
+- `#include` pulls in `.inc` header files at source level; `.inc` files are excluded from the compiled `data.dcp` (see `ddp.wpr` filter)
+- Entry chain: `default.game` → `scripts\game.script` → attaches `game_loop.script`
 
-## Notes
+## Conventions
 
-- Spanish-language game (verbs: "Ir a", "Agarrar", "Mirar", "Usar", etc.)
-- Line endings: CRLF (Windows) - don't change git autocrlf
-- Remote: `git@github.com:morhook/ddp.git`
-- Published: https://morhook.itch.io/dia-del-petardo
+- Spanish-language game -- verbs: "Ir a", "Agarrar", "Mirar", "Usar", "Dar", "Abrir", "Cerrar", "Empujar", "Tirar", "Hablar"
+- CRLF line endings enforced via `.gitattributes` -- do not change
